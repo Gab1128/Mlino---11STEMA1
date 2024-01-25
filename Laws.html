@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>General Mathematics</title>
+<link rel="stylesheet" href="Laws.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+ 
+            <aside class="sidebar close">
+                <div class="logo-details">
+                    <a href="index.html"><i class='bx bxs-calculator'></i></a>
+                    <span class="logo_name">Mathalino</span>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-math' ></i>
+                            <span class="link_name">General Mathematics</span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="#">Module 1:</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-book'></i>
+                        <span class="link_name">Module 1:</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Module 1:</a></li>
+                        <li><a href="Module 1.html">Logarithmic Concepts</a></li>
+                        <li><a href="Laws.html">Logarithmic Laws & <br>Properties</a></li>
+                        <li><a href="Equal.html">Logarithmic Equalities</a></li>
+                        <li><a href="Rlp.html">Word Problems</a></li>
+                    </ul>
+                </li>   
+                <li>
+                    <div class="iocn-link">
+                        <a href="PE.html"
+                            <i class='bx bx-task' ></i>
+                        <span class="link_name">Practice Exercise</span>
+                        </a>
+                      
+                    </div>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-book'></i>
+                        <span class="link_name">Module 2:</span>
+                        </a>
+                        <i class='bx bx-lock' ></i>
+                    </div>
+                </li>
+                <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-book'></i>
+                    <span class="link_name">Module 3:</span>
+                    </a>
+                    <i class='bx bx-lock' ></i>
+                </div>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-book'></i>
+                    <span class="link_name">Module 4:</span>
+                    </a>
+                    <i class='bx bx-lock' ></i>
+                </div>
+            </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="home-section">
+            <div class="home-content">
+                <i class='bx bx-menu' ></i>
+                <span class="text">Module 1:</span>
+            </div>
+        </div>
+            
+        
+
+<script>
+   
+   let arrow = document.querySelectorAll(".arrow");
+    console.log(arrow);
+    for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e)=>{
+            let arrowParent = e.target.parentElement.parentElement;
+       arrowParent.classList.toggle("showMenu"); 
+        });
+    }
+    
+let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".bx-menu");
+console.log(sidebarBtn);
+sidebarBtn.addEventListener("click", ()=>{
+sidebar.classList.toggle("close");
+});
+</script>
+
+<section>    
+<div class="text-box">
+    <h1>Logarithmic Laws and Properties </h1>
+    <p>-Logarithmic laws and properties are mathematical rules that govern the manipulation and simplification of logarithmic expressions.<br>
+        Logarithms are mathematical functions that represent the exponent to which a fixed number (called the base) must be raised to obtain a given number.<br>
+        The logarithmic laws and properties make it easier to perform calculations involving logarithms. Here are some fundamental logarithmic laws:</p>
+<div class="PL">
+    <h2>Properties of Logarithms:</h2>
+</Section>
+    <div class="D">
+        <h3>Definition:</h3>
+        <p>If b<sup>y</sup>=x, then log<sub>b</sub>x=y. In other words, the logarithm of x to the base b is equal to y.
+</div>
+<div class="CB">
+</div>
+<div class="z">
+    <h3>    Zero Property:</h3>
+    <p>log<sub>b</sub>1=0. The logarithm of 1 to any base is always 0.
+</div>
+<div class="i">
+    <h3>    Identity Property:</h3>
+    <p>log<sub>b</sub>b=1. The logarithm of a number to the same base is always 1.
+</div>
+
+<div class="ivr">
+    <h3>Inverse Property:</h3>
+    <p>The inverse of log<sub>b</sub>b<sup>x</sup>=x is b<sup>log</sup><sub>b</sub>x = x. Likewise for natural logarithms, the inverse of lne<sup>x</sup>=x is e<sup>lnx</sup>=x.</p>
+</div>
+
+<div class="chg">
+    <h3>Change of Base Formula</h3>
+    <p> When the original logarithm cannot be solved as is. We use the change of base formula. The change of base formula is denoted by log<sub>b</sub>a = log<sub>d</sub>a/log<sub>d</sub>b. The new base is found by determining a similar base between the argument and the original base.<br>
+    Example:<br> 
+                <img src="images/cob.jpg" width="700px"> </p>
+</div>
+<div class="u">
+    <h3>    Undefined Logarithms:</h3>
+    <p>log<sub>b</sub>x is undefined for x≤0. Logarithms of non-positive numbers are undefined.
+</div>
+<section>
+    <div class="L">
+        <h1>Laws of Logarithms</h1>
+    </div>
+        <div class="pl">
+            <h2>  1. Product Law:</h2>
+            <p>log<sub>b</sub>(xy)=log<sub>b</sub>(x)+log<sub>b</sub>( y ) This law states that the logarithm of the product of two 
+                numbers is equal to the sum of the logarithms of the individual numbers.
+                </p>
+                <img src="images/pl1.jpg" width="400px">
+                <div class="ql">
+                    <h2>  2. Quotient Law:</h2>
+                    <p>log<sub>b</sub>(x/y)=log<sub>b</sub>(x)−log<sub>b</sub>(y) The logarithm of the quotient of two numbers is equal 
+        to the difference of the logarithms of the individual numbers.
+                        </p>
+                        <img src="images/pw1.jpg"width="400px">
+                        <div class="pw">
+                            <h2>  3. Power Law:</h2>
+                            <p>log<sub>b</sub>(x<sup>n</sup>)=n⋅log<sub>b</sub> (x) This law states that the logarithm of a number raised to a 
+                power is equal to the product of the exponent and the logarithm of the base.
+                                </p>
+                                <img src="images/ql1.jpg" width="400px" >
